@@ -1,0 +1,453 @@
+/* Selector universal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #737d8e;
+    --mainColor-dark: #2B2D42;
+    --mainTextColor: #EDF2F4;
+    --secondaryColor: #EF233C;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-family: "Roboto", serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.logo {
+    font-size: 2rem;
+}
+/* COMPONENTES */
+/* Botón */
+.boton {
+    background-color: var(--secondaryColor);
+    color: var(--mainTextColor);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.titulo {
+    font-weight: 400;
+}
+
+/* LAYOUT */
+/* Header */
+header {
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    width: 100%;
+}
+
+header a {
+    color: var(--mainTextColor);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Navbar */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+.navbar {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.boton:hover {
+    background-color: black;
+}
+
+.boton:active {
+    background-color: blue;
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: var(--mainColor);
+    color: var(--mainTextColor);
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+   
+    gap: 15px;
+}
+
+footer nav ul li a {
+    color: var(--mainTextColor);
+    font-weight: 300;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form input {
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+footer form button {
+    background-color: var(--secondaryColor);
+    color: var(--mainTextColor);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background-color: #d61e2a;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--mainTextColor);
+}
+
+
+footer span {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+
+/* HOME */
+/* Banner */
+#banner {
+    text-align: center;
+    background-color: var(--mainTextColor);
+    color: var(--mainColor);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bannerLeft {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.bannerRight {
+    width: 30%;
+}
+
+.bannerRight img {
+    width: 150px;
+}
+
+#banner h1 {
+    font-weight: 400;
+    
+}
+
+#banner h2 {
+    font-weight: 200;
+}
+
+#banner p {
+    margin: 20px 0;
+    max-width: 850px;
+}
+
+/* Servicios */
+#servicios .servicio {
+    background-color: var(--mainColor);
+    color: var(--mainTextColor);
+}
+
+#servicios .titulo {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.serviciosContainer {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+
+.servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.servicio h3 {
+    font-weight: 300;
+}
+
+.servicio p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+#servicios a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 20px 0 100px 0;
+}
+
+/* Testimoniales */
+#testimoniales article {
+    color: #2B2D42;
+    width: 45%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 200px;
+}
+
+#testimoniales .titulo {
+    text-align: center;
+    margin: 40px;
+}
+
+#testimoniales article p {
+    font-style: italic;
+}
+
+.testimonialesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Productos */
+
+#productos {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productosContainer {
+    display: flex;
+    max-width: 900px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#productos .titulo {
+    text-align: center;
+}
+
+.producto {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.producto1 {
+    background-image: url("../img/airpods.jpg");
+}
+
+.producto2 {
+    background-image: url("../img/ipad.jpg");
+}
+
+.producto3 {
+    background-image: url("../img/iphone.webp");
+}
+
+.producto4 {
+    background-image: url("../img/mac-mini.jpg");
+}
+
+.producto5 {
+    background-image: url("../img/mac-m2.jpg");
+}
+
+.producto6 {
+    background-image: url("../img/apple-watch.jpg");
+}
+
+
+.wpp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.wpp img {
+    width: 50px;
+}
+
+
+/* CONTACTO */
+#mainContacto {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mainContacto h2 {
+    margin-bottom: 20px;
+}
+
+#mainContacto {
+    color: var(--mainColor);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+#mainContacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mainContacto label {
+    font-weight: 500;
+    color: #333;
+}
+
+#mainContacto button {
+    border: none;
+    padding: 10px 0;
+}
+
+#mainContacto input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#mainContacto input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.formServicios {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.radio-group span,
+.checkbox-group span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+#mainContacto section {
+    margin-bottom: 40px;
+}
+
+#mainContacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mainContacto iframe {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
